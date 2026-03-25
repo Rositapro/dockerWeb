@@ -1,0 +1,78 @@
+:root {
+    --rosa-pastel: #fff0f5;
+    --rosa-medio: #ff85a1;
+    --rosa-fuerte: #ff477e;
+    --blanco: #ffffff;
+}
+
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 0; 
+    padding: 40px; 
+   background-image: url('../background.jpg'); /* Ruta a tu imagen de flores */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repite la imagen si es grande */
+    background-attachment: fixed; /* El fondo se queda fijo al hacer scroll */
+    color: #444;
+}
+
+.container { 
+    max-width: 800px;
+    margin: auto;
+    background: var(--blanco); 
+    padding: 30px; 
+    border-radius: 20px; 
+    box-shadow: 0 10px 25px rgba(255, 71, 126, 0.2); 
+}
+
+h1 { color: var(--rosa-fuerte); text-align: center; margin-bottom: 30px; }
+
+form { 
+    background: #fff9fb; 
+    padding: 20px; 
+    border: 2px solid #ffe1ea;
+    border-radius: 15px; 
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ffc1d3;
+    border-radius: 8px;
+    margin-right: 10px;
+    outline: none;
+}
+
+input:focus { border: 2px solid var(--rosa-medio); }
+
+.btn { 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 8px; 
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-add { background: var(--rosa-fuerte); color: white; }
+.btn-add:hover { background: #e6396b; transform: scale(1.05); }
+
+.btn-edit { background: #ffc1d3; color: #b02e52; margin-right: 5px; }
+.btn-edit:hover { background: var(--rosa-medio); color: white; }
+
+.btn-del { background: #ffd1d1; color: #d63031; }
+.btn-del:hover { background: #ff7675; color: white; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th { 
+    background-color: var(--rosa-medio); 
+    color: white; 
+    padding: 15px; 
+    text-align: left;
+    border-radius: 10px 10px 0 0;
+}
+td { padding: 12px; border-bottom: 1px solid #ffe1ea; }
+tr:hover { background-color: #fff9fb; }
